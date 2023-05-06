@@ -3,6 +3,7 @@
 add_action(
 	'rest_api_init',
 	function () {
+        echo 'init';
 
 		if ( ! function_exists( 'use_block_editor_for_post_type' ) ) {
 			require ABSPATH . 'wp-admin/includes/post.php';
